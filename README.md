@@ -1,51 +1,86 @@
+<p><img src="assets/icon.png" width="72" height="72" alt="Icono de Catastro Pro"></p>
+
 # Catastro Pro
 
-Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.
+## Una referencia. Una ficha clara.
 
-**Author:** Sami Halawa · **Version:** 0.1.2 · **Format:** portable skills plugin + Claude plugin manifest · **Code licence:** MIT.
+Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.
 
-## What is included
+**Para:** Arquitectos y profesionales inmobiliarios que contrastan datos descriptivos.
 
-A dedicated workflow, official source references, self-contained Python 3.11+ adapters, icon, support/data-practices documents and acceptance examples. It is not an already hosted MCP app or an approved public-directory listing.
+**Fuente:** Dirección General del Catastro · **Sin cuenta adicional ni API key** · **Python 3.11+** · **MIT**
 
-## Install in Claude Code
+### Qué obtienes
+
+- Superficie construida y de parcela con sus unidades.
+- Longitud y latitud normalizadas y validadas.
+- Errores y varias unidades nunca ocultos tras un éxito aparente.
+
+### Pruébalo con una pregunta
+
+> Consulta la referencia 2749704YJ0624N0001DI y separa superficie construida y de parcela.
+
+También: “Explica qué comprueba esta ficha y qué requiere Registro o Urbanismo.”
+
+[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/catastro-pro/references/workflow.md)
+
+La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
+
+## Instalar en Claude Code
+
+```text
+/plugin install catastro-pro --marketplace samihalawa/catastro-pro
+```
+
+O desde terminal:
 
 ```bash
 claude plugin marketplace add samihalawa/catastro-pro
 claude plugin install catastro-pro@catastro-pro
 ```
 
-Inside a Claude Code session (v2.1.275+), the one-step equivalent is:
+Después, pregunta en lenguaje natural o invoca `/catastro-pro:catastro-pro`.
 
-```text
-/plugin install catastro-pro --marketplace samihalawa/catastro-pro
-```
+## Ver un resultado sin conexión
 
-The adapter requires Python 3.11+ and access to its official data providers. No separate product account, API key, payment or publisher-hosted service is required. A host that cannot execute Python may use the workflow with its available native browsing and supplied documents. The package does not grant unavailable host permissions or network access.
-
-## Use
-
-Ask: “Create a public property fact sheet from a cadastral reference.”
-
-In ChatGPT, the workflow uses native browsing or your supplied documents. Local Python networking is not assumed. In Claude Code/Codex, use `skills/catastro-pro/scripts/run.py` to retrieve official public data.
+Desde una copia de este repositorio:
 
 ```bash
-python3 skills/catastro-pro/scripts/run.py list
-python3 skills/catastro-pro/scripts/run.py call catastro_property --json '{"reference": "2749704YJ0624N0001DI"}'
+python3 skills/catastro-pro/scripts/run.py demo
+python3 skills/catastro-pro/scripts/run.py demo --format html --output ejemplo.html
 ```
 
-## Limits
+## Consultar y guardar un informe
 
-No protected owner information, tax identifiers, cadastral valuations, title certification, house valuation, parcel surveying or planning-permission verification.
+```bash
+python3 skills/catastro-pro/scripts/run.py report catastro_property --json '{"reference": "2749704YJ0624N0001DI"}'
+```
 
-No source credentials, paid API calls, subscriptions, account database or publisher telemetry are bundled. No background jobs are started.
+Añade `--format html --output informe.html` o `--format json`. No se sobrescriben archivos por defecto. `doctor` comprueba el entorno local sin consultar proveedores.
 
-## Public source and submission
+## Dónde funciona
 
-This repository is the complete standalone source. [Claude submission information](SUBMISSION.md), [privacy](PRIVACY.md), [terms](TERMS.md), [support](SUPPORT.md) and [security](SECURITY.md) are included.
+| Entorno | Comportamiento |
+|---|---|
+| Claude Code / Codex con Python y red autorizada | Adaptadores e informes ejecutables. |
+| ChatGPT con navegación/archivos | Flujo con herramientas nativas disponibles; no es un MCP alojado. |
+| Sin red | Demo guardada o documentos aportados; no datos actuales inventados. |
 
-This is an independent skills plugin by Sami Halawa, not an official government service or an approved Anthropic directory listing. Public repository publication, successful installation and directory approval are separate states.
+## Alcance real
 
-## Development verification
+Solo datos no protegidos. No acredita propiedad, habitabilidad, valor o licencia urbanística. El punto no delimita una parcela. Navarra y País Vasco usan sistemas separados.
 
-Run `python3 scripts/check_package.py` and `claude plugin validate --strict .claude-plugin/plugin.json`. An optional GitHub Actions template is provided at `ci/validate.yml`. It is not active: the publishing credential has repository access but no workflow-write permission. Installation is verified directly in a fresh Claude configuration. These checks do not establish model-based user acceptance or continued availability of government services. See `evidence/claude-validation.json` and `evidence/live-probes.json` for the exact observed state; a CI template is not a completed CI run.
+## Verificación
+
+```bash
+python3 -m unittest discover -s tests -v
+python3 scripts/check_package.py
+claude plugin validate --strict .claude-plugin/plugin.json
+claude plugin validate --strict .
+```
+
+[Mejoras y crítica](CHANGELOG.md) · [Evidencia versionada](evidence/) · [Revisión de Claude](SUBMISSION.md). Los tests no equivalen a adopción. `ci/validate.yml` es una plantilla inactiva.
+
+**English:** An independent workflow for Spanish official data, with a self-contained Python adapter, offline example and readable reports. Answer language follows the user.
+
+**Sami Halawa** · Software independiente; sin afiliación oficial. [Privacidad](PRIVACY.md) · [Condiciones](TERMS.md) · [Soporte](SUPPORT.md) · [Seguridad](SECURITY.md).

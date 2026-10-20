@@ -1,8 +1,8 @@
 {
   "name": "catastro-pro",
   "displayName": "Catastro Pro",
-  "version": "0.1.2",
-  "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+  "version": "0.2.0",
+  "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,8 +10,11 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "official-data",
-    "read-only"
+    "catastro",
+    "referencia-catastral",
+    "inmuebles",
+    "arquitectura",
+    "cartografia"
   ],
   "homepage": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
   "repository": "https://github.com/samihalawa/catastro-pro",

@@ -7,6 +7,6 @@
   {
     "name": "catastro_coordinates",
     "signature": "(reference: 'str') -> 'dict[str, Any]'",
-    "description": "Obtain the official cadastral reference point in EPSG:4326. It is not a parcel boundary or survey."
+    "description": "Return labelled longitude/latitude in EPSG:4326 from the official cadastral reference point, not a surveyed boundary."
   }
 ]

@@ -1,0 +1,35 @@
+{
+  "name": "Catastro Pro",
+  "promise": "Una referencia. Una ficha clara.",
+  "audience": "Arquitectos y profesionales inmobiliarios que contrastan datos descriptivos.",
+  "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
+  "short": "Ficha catastral legible",
+  "source": "Dirección General del Catastro",
+  "keywords": [
+    "catastro",
+    "referencia-catastral",
+    "inmuebles",
+    "arquitectura",
+    "cartografia"
+  ],
+  "prompts": [
+    "Consulta la referencia 2749704YJ0624N0001DI y separa superficie construida y de parcela.",
+    "Explica qué comprueba esta ficha y qué requiere Registro o Urbanismo.",
+    "Dame las coordenadas indicando longitud, latitud y sistema de referencia."
+  ],
+  "benefits": [
+    "Superficie construida y de parcela con sus unidades.",
+    "Longitud y latitud normalizadas y validadas.",
+    "Errores y varias unidades nunca ocultos tras un éxito aparente."
+  ],
+  "critique": "Algunos errores del Catastro se devolvían como éxito. Las coordenadas eran campos técnicos sin ejes normalizados.",
+  "change": "Ficha clara, errores explícitos, puntos validados y ejes etiquetados; varias propiedades nunca se reducen a una por defecto.",
+  "limits": "Solo datos no protegidos. No acredita propiedad, habitabilidad, valor o licencia urbanística. El punto no delimita una parcela. Navarra y País Vasco usan sistemas separados.",
+  "tool": "catastro_property",
+  "args": {
+    "reference": "2749704YJ0624N0001DI"
+  },
+  "extra": "Si hay varias unidades, pide la referencia completa. No confundas superficie construida con útil. No solicites credenciales ni identidad del propietario. La referencia de ejemplo es ilustrativa, no una propiedad del usuario.",
+  "slug": "catastro-pro",
+  "version": "0.2.0"
+}

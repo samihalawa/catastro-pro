@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+  "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,14 +12,15 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Create a public property fact sheet from a cadastral reference.",
-          "Explain what cadastral data can and cannot prove about a property."
+          "Consulta la referencia 2749704YJ0624N0001DI y separa superficie construida y de parcela.",
+          "Explica qué comprueba esta ficha y qué requiere Registro o Urbanismo.",
+          "Dame las coordenadas indicando longitud, latitud y sistema de referencia."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Catastro Pro",
         "logo": "./assets/icon.png",
-        "longDescription": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo protected owner information, tax identifiers, cadastral valuations, title certification, house valuation, parcel surveying or planning-permission verification.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
-        "shortDescription": "Public parcel facts",
+        "longDescription": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.\n\nArquitectos y profesionales inmobiliarios que contrastan datos descriptivos. Superficie construida y de parcela con sus unidades. Longitud y latitud normalizadas y validadas. Errores y varias unidades nunca ocultos tras un éxito aparente.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nSolo datos no protegidos. No acredita propiedad, habitabilidad, valor o licencia urbanística. El punto no delimita una parcela. Navarra y País Vasco usan sistemas separados.",
+        "shortDescription": "Ficha catastral legible",
         "websiteURL": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
         "supportURL": "https://github.com/samihalawa/catastro-pro/blob/main/SUPPORT.md",
         "privacyPolicyURL": "https://github.com/samihalawa/catastro-pro/blob/main/PRIVACY.md",
@@ -29,13 +30,16 @@
   },
   "keywords": [
     "spain",
-    "official-data",
-    "read-only",
-    "catastro-pro"
+    "claude-plugin",
+    "catastro",
+    "referencia-catastral",
+    "inmuebles",
+    "arquitectura",
+    "cartografia"
   ],
   "license": "MIT",
   "name": "catastro-pro",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "homepage": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
   "repository": "https://github.com/samihalawa/catastro-pro"
 }
