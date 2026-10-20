@@ -22,9 +22,11 @@ Convierte una referencia catastral en una ficha con superficies, uso, construcci
 
 También: “Explica qué comprueba esta ficha y qué requiere Registro o Urbanismo.”
 
-[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/catastro-pro/references/workflow.md)
+[Ver el informe de ejemplo](https://samihalawa.github.io/catastro-pro/demo.html) · [Web y demostración](https://samihalawa.github.io/catastro-pro/) · [Flujo completo](skills/catastro-pro/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
+
+[![Vista de Catastro Pro](docs/preview.jpg)](https://samihalawa.github.io/catastro-pro/)
 
 ## Instalar en Claude Code
 

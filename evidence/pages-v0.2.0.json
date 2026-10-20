@@ -1,0 +1,49 @@
+{
+  "version": "0.2.0",
+  "checked_at": "2026-10-20T16:33:49.975462+00:00",
+  "source_commit": "2cb8968beb02a5c735fff5bbee655f61f4029a1a",
+  "public_url": "https://samihalawa.github.io/catastro-pro/",
+  "source": {
+    "branch": "main",
+    "path": "/docs"
+  },
+  "scope": "Anonymous HTTP and exact published-asset matching; responsive behavior tested separately.",
+  "checks": [
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/",
+      "http_status": 200,
+      "sha256": "9f6ed1d8665ac2f257d6449bafd4ad55e8b4cb56f68af5e181d903c8c68fc6cb",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/demo.html",
+      "http_status": 200,
+      "sha256": "f0d8f52992aee6eba2b0157cd44d207dea1fdb8a483ad26a2cf0404150d00817",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/style.css",
+      "http_status": 200,
+      "sha256": "add71020320976e5631374baacaef51844820112f139eb17f59f846f25d7b8c6",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/site.js",
+      "http_status": 200,
+      "sha256": "59108e7d8efc8395bf2f34105b557e7468dfc1998902b92dd57bb20ed0ff8340",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/icon.png",
+      "http_status": 200,
+      "sha256": "d9038ac719595e0f3a1596354fc61fe67a9a5ac09f6b2c7d00c522b9a656a351",
+      "matches_source": true
+    },
+    {
+      "url": "https://samihalawa.github.io/catastro-pro/preview.jpg",
+      "http_status": 200,
+      "sha256": "9526d51f0194d44bd8f3772449604c7cf1e7c624a24170c29f259d78bdb0634c",
+      "matches_source": true
+    }
+  ]
+}

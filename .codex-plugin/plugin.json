@@ -18,7 +18,7 @@
     "logo": "./assets/icon.png",
     "longDescription": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.\n\nArquitectos y profesionales inmobiliarios que contrastan datos descriptivos. Superficie construida y de parcela con sus unidades. Longitud y latitud normalizadas y validadas. Errores y varias unidades nunca ocultos tras un éxito aparente.\n\nEjemplos guardados sin conexión e informes HTML/Markdown/JSON. Sin cuenta adicional, claves API ni servicio propio. Los scripts requieren Python 3.11+ y red autorizada. En ChatGPT, se utilizan únicamente las herramientas nativas disponibles.\n\nSolo datos no protegidos. No acredita propiedad, habitabilidad, valor o licencia urbanística. El punto no delimita una parcela. Navarra y País Vasco usan sistemas separados.",
     "shortDescription": "Ficha catastral legible",
-    "websiteURL": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
+    "websiteURL": "https://samihalawa.github.io/catastro-pro/",
     "supportURL": "https://github.com/samihalawa/catastro-pro/blob/main/SUPPORT.md",
     "privacyPolicyURL": "https://github.com/samihalawa/catastro-pro/blob/main/PRIVACY.md",
     "termsOfServiceURL": "https://github.com/samihalawa/catastro-pro/blob/main/TERMS.md"
@@ -35,5 +35,6 @@
   "license": "MIT",
   "name": "catastro-pro",
   "skills": "./skills",
-  "version": "0.2.0"
+  "version": "0.2.0",
+  "homepage": "https://samihalawa.github.io/catastro-pro/"
 }

@@ -6,6 +6,10 @@ Repository: https://github.com/samihalawa/catastro-pro
 
 Plugin at repository root. Stable identity: `catastro-pro`.
 
+Public product page: https://samihalawa.github.io/catastro-pro/
+
+Saved official-source report: https://samihalawa.github.io/catastro-pro/demo.html
+
 ## Listing
 
 Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.
