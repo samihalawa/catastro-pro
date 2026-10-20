@@ -1,0 +1,23 @@
+{
+  "name": "catastro-pro",
+  "displayName": "Catastro Pro",
+  "version": "0.1.2",
+  "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+  "author": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only"
+  ],
+  "homepage": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
+  "repository": "https://github.com/samihalawa/catastro-pro",
+  "icon": "./assets/icon.png",
+  "documentationUrl": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
+  "supportUrl": "https://github.com/samihalawa/catastro-pro/blob/main/SUPPORT.md",
+  "privacyPolicyUrl": "https://github.com/samihalawa/catastro-pro/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/samihalawa/catastro-pro/blob/main/TERMS.md"
+}

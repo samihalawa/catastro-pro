@@ -1,0 +1,12 @@
+[
+  {
+    "name": "catastro_property",
+    "signature": "(reference: 'str') -> 'dict[str, Any]'",
+    "description": "Retrieve only non-protected cadastral property facts from the official service. No owners, tax identifiers, cadastral valuations or title certification."
+  },
+  {
+    "name": "catastro_coordinates",
+    "signature": "(reference: 'str') -> 'dict[str, Any]'",
+    "description": "Obtain the official cadastral reference point in EPSG:4326. It is not a parcel boundary or survey."
+  }
+]

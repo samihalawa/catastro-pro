@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-10-20T15:38:46.694660+00:00",
+  "scope": "Bounded adapter smoke tests, not full historical coverage or model-based user acceptance.",
+  "passed": 2,
+  "total": 2,
+  "tests": [
+    {
+      "tool": "catastro_property",
+      "arguments": {
+        "reference": "2749704YJ0624N0001DI"
+      },
+      "ok": true,
+      "elapsed_seconds": 0.547,
+      "coverage": {
+        "single_property": true
+      },
+      "sources": [
+        {
+          "url": "https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&Municipio=&RefCat=2749704YJ0624N0001DI",
+          "retrieved_at": "2026-10-20T15:38:43.816414+00:00",
+          "sha256": "b728d1a7d767b15e2c4badbd013c3f5af021e58012346a7c561ce7afccaf3cfc",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    },
+    {
+      "tool": "catastro_coordinates",
+      "arguments": {
+        "reference": "2749704YJ0624N0001DI"
+      },
+      "ok": true,
+      "elapsed_seconds": 0.584,
+      "coverage": {
+        "reference": "2749704YJ0624N0001DI",
+        "crs": "EPSG:4326"
+      },
+      "sources": [
+        {
+          "url": "https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCoordenadas.svc/json/Consulta_CPMRC?Provincia=&Municipio=&SRS=EPSG%3A4326&RefCat=2749704YJ0624N",
+          "retrieved_at": "2026-10-20T15:38:43.890936+00:00",
+          "sha256": "1b7487872106b3a1dfa0d3731fb7b029069e4043d772b04295bd211c96ee1dd6",
+          "cache_hit": false
+        }
+      ],
+      "error": null
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "author": {
+    "email": "sami@samihalawa.com",
+    "name": "Sami Halawa"
+  },
+  "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+  "interface": {
+    "capabilities": [],
+    "category": "Productivity",
+    "composerIcon": "./assets/icon.png",
+    "defaultPrompt": [
+      "Create a public property fact sheet from a cadastral reference.",
+      "Explain what cadastral data can and cannot prove about a property."
+    ],
+    "developerName": "Sami Halawa",
+    "displayName": "Catastro Pro",
+    "logo": "./assets/icon.png",
+    "longDescription": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.\n\nIncludes a focused assistant workflow, official-source references, review examples and a Python 3.11+ read-only adapter. In ChatGPT, uses available native browsing/file tools; in Claude Code or Codex, the bundled scripts can retrieve official data directly when networking is permitted. No separate account, API key or publisher-hosted server is required for this skills release.\n\nNo protected owner information, tax identifiers, cadastral valuations, title certification, house valuation, parcel surveying or planning-permission verification.\n\nIndependent software by Sami Halawa. Not affiliated with Spanish public authorities.",
+    "shortDescription": "Public parcel facts"
+  },
+  "keywords": [
+    "spain",
+    "official-data",
+    "read-only",
+    "catastro-pro"
+  ],
+  "license": "MIT",
+  "name": "catastro-pro",
+  "skills": "./skills",
+  "version": "0.1.2"
+}

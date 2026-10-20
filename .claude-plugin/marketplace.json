@@ -1,0 +1,19 @@
+{
+  "name": "catastro-pro",
+  "owner": {
+    "name": "Sami Halawa",
+    "email": "sami@samihalawa.com"
+  },
+  "metadata": {
+    "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+    "version": "0.1.2"
+  },
+  "plugins": [
+    {
+      "name": "catastro-pro",
+      "source": "./",
+      "description": "Turn a cadastral reference into a clear non-protected property fact sheet without confusing Catastro with title or planning permission.",
+      "version": "0.1.2"
+    }
+  ]
+}
