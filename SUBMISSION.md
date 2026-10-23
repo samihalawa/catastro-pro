@@ -1,14 +1,10 @@
-# Claude review — Catastro Pro 0.2.0
+# Claude review — Catastro Pro 0.3.0
 
 Publisher: Sami Halawa · Contact: sami@samihalawa.com
 
 Repository: https://github.com/samihalawa/catastro-pro
 
 Plugin at repository root. Stable identity: `catastro-pro`.
-
-Public product page: https://samihalawa.github.io/catastro-pro/
-
-Saved official-source report: https://samihalawa.github.io/catastro-pro/demo.html
 
 ## Listing
 

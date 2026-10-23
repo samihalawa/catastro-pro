@@ -22,11 +22,9 @@ Convierte una referencia catastral en una ficha con superficies, uso, construcci
 
 También: “Explica qué comprueba esta ficha y qué requiere Registro o Urbanismo.”
 
-[Ver el informe de ejemplo](https://samihalawa.github.io/catastro-pro/demo.html) · [Web y demostración](https://samihalawa.github.io/catastro-pro/) · [Flujo completo](skills/catastro-pro/references/workflow.md)
+[Ver el informe de ejemplo](examples/demo.md) · [Código de la página del producto](docs/index.html) · [Flujo completo](skills/catastro-pro/references/workflow.md)
 
 La demostración es una **captura guardada de fuentes oficiales**, no una consulta actual. Conserva fecha, enlaces y alcance.
-
-[![Vista de Catastro Pro](docs/preview.jpg)](https://samihalawa.github.io/catastro-pro/)
 
 ## Instalar en Claude Code
 
@@ -55,7 +53,7 @@ python3 skills/catastro-pro/scripts/run.py demo --format html --output ejemplo.h
 ## Consultar y guardar un informe
 
 ```bash
-python3 skills/catastro-pro/scripts/run.py report catastro_property --json '{"reference": "2749704YJ0624N0001DI"}'
+python3 skills/catastro-pro/scripts/run.py report catastro_ficha --json '{"reference": "2749704YJ0624N0001DI"}'
 ```
 
 Añade `--format html --output informe.html` o `--format json`. No se sobrescriben archivos por defecto. `doctor` comprueba el entorno local sin consultar proveedores.

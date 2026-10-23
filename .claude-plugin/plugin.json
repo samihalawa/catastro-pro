@@ -1,7 +1,7 @@
 {
   "name": "catastro-pro",
   "displayName": "Catastro Pro",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
   "author": {
     "name": "Sami Halawa",

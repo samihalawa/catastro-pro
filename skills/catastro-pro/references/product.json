@@ -23,13 +23,13 @@
     "Errores y varias unidades nunca ocultos tras un éxito aparente."
   ],
   "critique": "Algunos errores del Catastro se devolvían como éxito. Las coordenadas eran campos técnicos sin ejes normalizados.",
-  "change": "Ficha clara, errores explícitos, puntos validados y ejes etiquetados; varias propiedades nunca se reducen a una por defecto.",
+  "change": "La nueva función catastro_ficha lleva al usuario a una salida más directamente utilizable; Ficha clara, errores explícitos, puntos validados y ejes etiquetados; varias propiedades nunca se reducen a una por defecto.",
   "limits": "Solo datos no protegidos. No acredita propiedad, habitabilidad, valor o licencia urbanística. El punto no delimita una parcela. Navarra y País Vasco usan sistemas separados.",
-  "tool": "catastro_property",
+  "tool": "catastro_ficha",
   "args": {
     "reference": "2749704YJ0624N0001DI"
   },
   "extra": "Si hay varias unidades, pide la referencia completa. No confundas superficie construida con útil. No solicites credenciales ni identidad del propietario. La referencia de ejemplo es ilustrativa, no una propiedad del usuario.",
   "slug": "catastro-pro",
-  "version": "0.2.0"
+  "version": "0.3.0"
 }
