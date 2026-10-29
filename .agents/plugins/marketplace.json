@@ -1,0 +1,20 @@
+{
+  "name": "catastro-pro",
+  "interface": {
+    "displayName": "Catastro Pro"
+  },
+  "plugins": [
+    {
+      "name": "catastro-pro",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

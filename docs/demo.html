@@ -1,5 +1,5 @@
 <!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Catastro Pro · Informe</title><style>*{box-sizing:border-box}body{margin:0;background:#f3f5f8;color:#152234;font:16px/1.6 system-ui,-apple-system,sans-serif}main{max-width:1140px;margin:36px auto;padding:40px;background:white;border:1px solid #dce3ed;border-radius:20px}header{border-bottom:2px solid #e5ebf3;margin-bottom:30px;padding-bottom:24px}.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#45627d;font-weight:750}h1{font-size:clamp(30px,5vw,48px);line-height:1.12;letter-spacing:-.04em;margin:10px 0 16px}h2{font-size:21px;letter-spacing:-.02em;margin:30px 0 12px}p{max-width:78ch;overflow-wrap:anywhere}.badge{padding:12px 16px;background:#fff4d8;color:#634405;border-radius:9px;border:1px solid #e8cc7f}.notice{background:#eef5fb;padding:14px;border-radius:9px}table{width:100%;border-collapse:collapse;font-size:14px}th{text-align:left;background:#edf3f9;color:#304962}td,th{padding:12px;border-bottom:1px solid #dce3ed;vertical-align:top}td{min-width:100px;overflow-wrap:anywhere}.scroll{overflow:auto;max-width:100%}a{color:#155b92;text-decoration-thickness:1px;text-underline-offset:3px}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#f1f4f8;padding:18px;border-radius:10px;font:13px/1.6 ui-monospace,monospace}details{margin:18px 0}summary{cursor:pointer;font-weight:650}small,footer{color:#526579}.source{margin:14px 0;overflow-wrap:anywhere}.error{border-left:4px solid #bd4036;padding:12px;background:#fff1ef}.muted{color:#526579}@media(max-width:650px){main{margin:0;border:0;border-radius:0;padding:24px 16px}td,th{padding:9px}}@media print{body{background:white}main{margin:0;border:0;padding:0;max-width:none}.scroll{overflow:visible}details{display:block}pre{font-size:10px}a{color:inherit}thead{display:table-header-group}tr{break-inside:avoid}}</style><body><main><header><div class="eyebrow">Catastro Pro / EVIDENCIA</div><h1>Catastro Pro</h1><p>Una referencia. Una ficha clara.</p><p class="badge">EJEMPLO GUARDADO · no es una consulta en tiempo real</p></header><p class="notice">8 filas mostradas. La cobertura y las limitaciones se indican al final.</p>
-<p>Captura: 2026-10-20T16:20:04.933921+00:00. Puedes reproducirla sin conexión con <code>demo</code>. Para datos actuales, ejecuta <code>report</code>.</p>
+<p>Captura: 2026-10-20T16:59:24.537780+00:00. Reproduce el ejemplo con la herramienta de demostración del MCP declarado. Para datos actuales, solicita una consulta a ese MCP.</p>
 <div class="scroll"><table><caption class="muted">Datos publicados; los textos extensos se abrevian en la tabla.</caption><thead><tr><th scope="col">Dato</th><th scope="col">Valor</th></tr></thead><tbody>
 <tr><td>Referencia</td><td>2749704YJ0624N0001DI</td></tr>
 <tr><td>Dirección</td><td>CL GUAYANA-MOJONERA 3 46388 GODELLETA (VALENCIA)</td></tr>
@@ -11,58 +11,87 @@
 <tr><td>Mapa catastral</td><td><a href="https://www1.sedecatastro.gob.es/Cartografia/mapa.aspx?del=46&amp;mun=138&amp;refcat=2749704YJ0624N" rel="noreferrer noopener">Fuente oficial</a></td></tr>
 </tbody></table></div>
 <h2>Fuentes que puedes comprobar</h2>
-<div class="source"><a href="https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&amp;Municipio=&amp;RefCat=2749704YJ0624N0001DI" rel="noreferrer noopener">https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&amp;Municipio=&amp;RefCat=2749704YJ0624N0001DI</a><br><small>Consulta: 2026-10-20T16:19:44.144469+00:00 · SHA-256: b728d1a7d767b15e…</small></div>
+<div class="source"><a href="https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&amp;Municipio=&amp;RefCat=2749704YJ0624N0001DI" rel="noreferrer noopener">https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&amp;Municipio=&amp;RefCat=2749704YJ0624N0001DI</a><br><small>Consulta: 2026-10-20T16:59:01.169936+00:00 · SHA-256: b728d1a7d767b15e…</small></div>
+<div class="source"><a href="https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCoordenadas.svc/json/Consulta_CPMRC?Provincia=&amp;Municipio=&amp;SRS=EPSG%3A4326&amp;RefCat=2749704YJ0624N" rel="noreferrer noopener">https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCoordenadas.svc/json/Consulta_CPMRC?Provincia=&amp;Municipio=&amp;SRS=EPSG%3A4326&amp;RefCat=2749704YJ0624N</a><br><small>Consulta: 2026-10-20T16:59:01.737042+00:00 · SHA-256: 1b7487872106b3a1…</small></div>
 <h2>Alcance de esta consulta</h2><pre>{
-  &quot;single_property&quot;: true
+  &quot;reference&quot;: &quot;2749704YJ0624N0001DI&quot;,
+  &quot;description_checked&quot;: true,
+  &quot;coordinate_checked&quot;: true,
+  &quot;partial&quot;: false
 }</pre>
-<details open><summary>Antes de tomar una decisión</summary><p>Source: Dirección General del Catastro. Non-protected descriptive data only. Cadastre is not proof of title, planning permission, occupancy legality, boundaries on the ground or market value. Navarra and the Basque Country have separate cadastral systems.</p></details>
+<details open><summary>Antes de tomar una decisión</summary><p>Source: Dirección General del Catastro. Non-protected descriptive data only. Cadastre is not proof of title, planning permission, occupancy legality, boundaries on the ground or market value. Navarra and the Basque Country have separate cadastral systems.</p><p>A reference point is not a surveyed boundary. A cadastral description is not evidence of ownership, legal occupation, or planning permission.</p></details>
 <details><summary>Respuesta estructurada completa</summary><pre>{
   &quot;ok&quot;: true,
   &quot;data&quot;: {
-    &quot;reference&quot;: &quot;2749704YJ0624N0001DI&quot;,
-    &quot;address&quot;: &quot;CL GUAYANA-MOJONERA 3 46388 GODELLETA (VALENCIA)&quot;,
-    &quot;use&quot;: &quot;Residencial&quot;,
-    &quot;built_area_m2&quot;: &quot;94&quot;,
-    &quot;construction_year&quot;: &quot;1976&quot;,
-    &quot;participation_percent&quot;: &quot;100,000000&quot;,
-    &quot;parcel_area_m2&quot;: &quot;839&quot;,
-    &quot;parcel_type&quot;: &quot;Parcela construida sin división horizontal&quot;,
-    &quot;map_url&quot;: &quot;https://www1.sedecatastro.gob.es/Cartografia/mapa.aspx?del=46&amp;mun=138&amp;refcat=2749704YJ0624N&quot;,
-    &quot;construction_units&quot;: [
-      {
-        &quot;use&quot;: &quot;VIVIENDA&quot;,
-        &quot;area_m2&quot;: &quot;58&quot;,
-        &quot;type&quot;: &quot;VIVIENDA UNIFAMILIAR&quot;
-      },
-      {
-        &quot;use&quot;: &quot;ALMACEN&quot;,
-        &quot;area_m2&quot;: &quot;19&quot;,
-        &quot;type&quot;: &quot;ANEJOS DE VIVIENDA Y LOCALES EN ESTRUCTURA&quot;
-      },
-      {
-        &quot;use&quot;: &quot;APARCAMIENTO&quot;,
-        &quot;area_m2&quot;: &quot;17&quot;,
-        &quot;type&quot;: &quot;ANEJOS DE VIVIENDA Y LOCALES EN ESTRUCTURA&quot;
-      }
-    ]
+    &quot;property&quot;: {
+      &quot;reference&quot;: &quot;2749704YJ0624N0001DI&quot;,
+      &quot;address&quot;: &quot;CL GUAYANA-MOJONERA 3 46388 GODELLETA (VALENCIA)&quot;,
+      &quot;use&quot;: &quot;Residencial&quot;,
+      &quot;built_area_m2&quot;: &quot;94&quot;,
+      &quot;construction_year&quot;: &quot;1976&quot;,
+      &quot;participation_percent&quot;: &quot;100,000000&quot;,
+      &quot;parcel_area_m2&quot;: &quot;839&quot;,
+      &quot;parcel_type&quot;: &quot;Parcela construida sin división horizontal&quot;,
+      &quot;map_url&quot;: &quot;https://www1.sedecatastro.gob.es/Cartografia/mapa.aspx?del=46&amp;mun=138&amp;refcat=2749704YJ0624N&quot;,
+      &quot;construction_units&quot;: [
+        {
+          &quot;use&quot;: &quot;VIVIENDA&quot;,
+          &quot;area_m2&quot;: &quot;58&quot;,
+          &quot;type&quot;: &quot;VIVIENDA UNIFAMILIAR&quot;
+        },
+        {
+          &quot;use&quot;: &quot;ALMACEN&quot;,
+          &quot;area_m2&quot;: &quot;19&quot;,
+          &quot;type&quot;: &quot;ANEJOS DE VIVIENDA Y LOCALES EN ESTRUCTURA&quot;
+        },
+        {
+          &quot;use&quot;: &quot;APARCAMIENTO&quot;,
+          &quot;area_m2&quot;: &quot;17&quot;,
+          &quot;type&quot;: &quot;ANEJOS DE VIVIENDA Y LOCALES EN ESTRUCTURA&quot;
+        }
+      ]
+    },
+    &quot;coordinates&quot;: {
+      &quot;reference&quot;: &quot;2749704YJ0624N0001DI&quot;,
+      &quot;points&quot;: [
+        {
+          &quot;longitude&quot;: -0.645262634278451,
+          &quot;latitude&quot;: 39.4080401884542,
+          &quot;crs&quot;: &quot;EPSG:4326&quot;,
+          &quot;label&quot;: &quot;CL GUAYANA-MOJONERA 3 GODELLETA (VALENCIA)&quot;
+        }
+      ]
+    },
+    &quot;title_verified&quot;: false,
+    &quot;planning_verified&quot;: false
   },
   &quot;sources&quot;: [
     {
       &quot;url&quot;: &quot;https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCallejero.svc/json/Consulta_DNPRC?Provincia=&amp;Municipio=&amp;RefCat=2749704YJ0624N0001DI&quot;,
-      &quot;retrieved_at&quot;: &quot;2026-10-20T16:19:44.144469+00:00&quot;,
+      &quot;retrieved_at&quot;: &quot;2026-10-20T16:59:01.169936+00:00&quot;,
       &quot;sha256&quot;: &quot;b728d1a7d767b15e2c4badbd013c3f5af021e58012346a7c561ce7afccaf3cfc&quot;,
+      &quot;cache_hit&quot;: false
+    },
+    {
+      &quot;url&quot;: &quot;https://ovc.catastro.meh.es/OVCServWeb/OVCWcfCallejero/COVCCoordenadas.svc/json/Consulta_CPMRC?Provincia=&amp;Municipio=&amp;SRS=EPSG%3A4326&amp;RefCat=2749704YJ0624N&quot;,
+      &quot;retrieved_at&quot;: &quot;2026-10-20T16:59:01.737042+00:00&quot;,
+      &quot;sha256&quot;: &quot;1b7487872106b3a1dfa0d3731fb7b029069e4043d772b04295bd211c96ee1dd6&quot;,
       &quot;cache_hit&quot;: false
     }
   ],
   &quot;coverage&quot;: {
-    &quot;single_property&quot;: true
+    &quot;reference&quot;: &quot;2749704YJ0624N0001DI&quot;,
+    &quot;description_checked&quot;: true,
+    &quot;coordinate_checked&quot;: true,
+    &quot;partial&quot;: false
   },
   &quot;warnings&quot;: [
-    &quot;Source: Dirección General del Catastro. Non-protected descriptive data only. Cadastre is not proof of title, planning permission, occupancy legality, boundaries on the ground or market value. Navarra and the Basque Country have separate cadastral systems.&quot;
+    &quot;Source: Dirección General del Catastro. Non-protected descriptive data only. Cadastre is not proof of title, planning permission, occupancy legality, boundaries on the ground or market value. Navarra and the Basque Country have separate cadastral systems.&quot;,
+    &quot;A reference point is not a surveyed boundary. A cadastral description is not evidence of ownership, legal occupation, or planning permission.&quot;
   ],
   &quot;notice&quot;: &quot;Independent software by Sami Halawa; not an official government service. Verify consequential decisions in the official source.&quot;,
   &quot;example&quot;: {
-    &quot;captured_at&quot;: &quot;2026-10-20T16:20:04.933921+00:00&quot;,
+    &quot;captured_at&quot;: &quot;2026-10-20T16:59:24.537780+00:00&quot;,
     &quot;mode&quot;: &quot;saved_official_snapshot&quot;,
     &quot;live&quot;: false
   }
