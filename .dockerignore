@@ -1,0 +1,14 @@
+**
+!Dockerfile
+!skills/
+!skills/catastro-pro/
+!skills/catastro-pro/scripts/
+!skills/catastro-pro/scripts/**
+!skills/catastro-pro/references/
+!skills/catastro-pro/references/**
+!LICENSE
+!SECURITY.md
+!PRIVACY.md
+!SUPPORT.md
+**/__pycache__/
+**/*.pyc
