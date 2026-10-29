@@ -31,5 +31,5 @@
   },
   "extra": "Si hay varias unidades, pide la referencia completa. No confundas superficie construida con útil. No solicites credenciales ni identidad del propietario. La referencia de ejemplo es ilustrativa, no una propiedad del usuario.",
   "slug": "catastro-pro",
-  "version": "0.3.0"
+  "version": "0.3.1"
 }
