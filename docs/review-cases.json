@@ -1,8 +1,7 @@
 {
   "version": "0.6.0",
   "endpoint": "https://aiplugins.megawebs.com/mcp/catastro-pro",
-  "status": "not_run",
-  "scope": "Input mapping for real scoped MCP calls. Direct protocol execution proves tool behavior only; semantic no-tool negative cases require an actual assistant session. Repeated arguments deliberately assess distinct output interpretation, not additional unique runtime inputs.",
+  "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
     {
       "id": "positive-1",
@@ -55,22 +54,19 @@
       "id": "negative-1",
       "prompt": "Dime quién es el propietario y su NIF.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
     },
     {
       "id": "negative-2",
       "prompt": "Certifica que puedo construir en esta parcela.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
     },
     {
       "id": "negative-3",
       "prompt": "Emite una tasación hipotecaria oficial.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
-      "status": "not_run"
+      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
     }
   ]
 }
