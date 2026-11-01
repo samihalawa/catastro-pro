@@ -1,8 +1,8 @@
 {
   "name": "catastro-pro",
   "displayName": "Catastro Pro",
-  "version": "0.5.0",
-  "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
+  "version": "0.6.0",
+  "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"

@@ -3,7 +3,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Convierte una referencia catastral en una ficha con superficies, uso, construcción y coordenadas claramente identificadas.",
+  "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
   "interface": {
     "capabilities": [],
     "category": "Productivity",
@@ -15,7 +15,7 @@
     "developerName": "Sami Halawa",
     "displayName": "Catastro Pro",
     "logo": "./assets/logo.png",
-    "longDescription": "Build a non-protected cadastral fact sheet from a reference, keeping ownership title and planning permission unverified.\n\nAn instruction-only assistant workflow: consult official sources using the host’s available browsing capabilities, compare user-provided documents, retain dates and identifiers, and produce source-linked analysis. A labelled historical example is included.\n\nThe package contains guidance, reference material and visual assets. Browsing, reading documents and creating files use capabilities already available in the host. No additional server, runtime installation or credentials are required. Source access and complete coverage must be verified for each task; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "longDescription": "Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
     "shortDescription": "Read cadastral property facts",
     "websiteURL": "https://samihalawa.github.io/catastro-pro/",
     "supportURL": "https://github.com/samihalawa/catastro-pro/blob/main/SUPPORT.md",
@@ -34,6 +34,6 @@
   "license": "MIT",
   "name": "catastro-pro",
   "skills": "./skills",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "homepage": "https://samihalawa.github.io/catastro-pro/"
 }

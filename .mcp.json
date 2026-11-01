@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "catastro-pro": {
+      "type": "http",
+      "url": "https://aiplugins.megawebs.com/mcp/catastro-pro"
+    }
+  }
+}
