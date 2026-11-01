@@ -1,13 +1,15 @@
-# Detailed source-specific workflow
+# Procedimiento — Catastro Pro
 
+1. Reutiliza la referencia catastral ya proporcionada o presente en documentos autorizados. Si solo hay una dirección, resuelve la correspondencia en la cartografía oficial antes de asignar datos a un inmueble. No pidas identidad del propietario, NIF, certificados, contraseñas ni acceso a datos protegidos. Una referencia parcial puede cubrir una parcela con varias unidades: no selecciones una vivienda por defecto.
+2. Abre la información pública oficial mediante la navegación nativa autorizada o examina la ficha aportada. Registra referencia completa, dirección tal como consta, uso, superficie construida, superficie de parcela, año de construcción y distinción entre inmueble y parcela. Conserva unidades y rótulos originales; superficie construida no equivale a superficie útil. Los campos ausentes quedan «no consta», no cero.
+3. Si hay coordenadas públicas, conserva sus ejes y sistema de referencia. Indica longitud/latitud solo cuando la fuente identifique ese sistema; no cambies ejes ni conviertas coordenadas de memoria. Un punto de referencia no delimita la parcela ni tiene precisión topográfica certificada. Si faltan coordenadas, no las deduzcas de una dirección aproximada como si fueran oficiales.
+4. Separa Catastro, Registro de la Propiedad, planeamiento, licencias de ocupación y mediciones físicas. Una descripción catastral no acredita propiedad, título, habitabilidad, legalidad urbanística, valores protegidos ni valor de mercado. Navarra y País Vasco utilizan sus sistemas propios: declara esa limitación en lugar de inventar cobertura nacional.
+5. Devuelve la ficha con fuentes y fecha de consulta, señalando unidades múltiples, discrepancias y documentos no accesibles. Sugiere la comprobación registral o urbanística concreta que responda a la pregunta del usuario. No accedas a información protegida ni amplíes la tarea a propietarios o valoraciones privadas.
 
-1. Ask for a cadastral reference only when it is not already supplied or available in the user's authorized documents. Do not ask for owner identity, tax number, certificate, account or password. A street address is not a verified cadastral reference; resolve ambiguity through the official map before attaching facts to a property.
-2. Use `catastro_property` for the public descriptive record. Show reference, source address, use, built area, parcel area where available, construction year, property/parcel distinction and official map link. Preserve units and distinguish built area from usable area. A 14-character parcel reference can cover multiple properties; do not silently pick one unit.
-3. Use `catastro_coordinates` only for a reference point. Inspect the CRS and labelled coordinates before plotting. A reference point is not a surveyed boundary. Do not swap axes, infer exact boundaries or claim centimetre accuracy.
-4. Explicitly distinguish Catastro from Registro de la Propiedad, urban planning, occupancy licences and physical measurements. Public descriptions do not establish ownership, title, legal habitable status, planning compliance, protected cadastral values or market value. Navarra and the Basque Country require their separate systems; do not fabricate national coverage.
-5. Return the factual sheet plus targeted official checks appropriate to the user's question. Do not reveal owner identities, protected valuations or use credentials to expand this public-data product.
+## Resultado esperado
 
-## Output
+Referencia y distinción inmueble/parcela; dirección oficial, uso, superficies con unidades y año; enlace al mapa/ficha; coordenadas con ejes y sistema cuando consten; fecha y origen de cada dato; discrepancias y comprobaciones separadas de Registro o Urbanismo.
 
-Reference and property/parcel distinction; public descriptive fields with units; official map; retrieval date; uncertainty and separate title/planning checks.
+## Sin acceso actual
 
+Trabaja solo con las fuentes y documentos que puedas abrir con las funciones nativas autorizadas. Identifica su fecha y sus lagunas. Si la revisión no está completa, delimita la parte comprobada; un error o una página inaccesible no equivale a cero resultados.
