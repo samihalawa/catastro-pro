@@ -1,7 +1,7 @@
 {
   "name": "catastro-pro",
   "displayName": "Catastro Pro",
-  "version": "0.6.0",
+  "version": "0.6.2",
   "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
   "author": {
     "name": "Sami Halawa",
@@ -16,11 +16,11 @@
     "arquitectura",
     "cartografia"
   ],
-  "homepage": "https://samihalawa.github.io/catastro-pro/",
+  "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro",
   "icon": "./assets/icon.png",
   "documentationUrl": "https://github.com/samihalawa/catastro-pro/blob/main/README.md",
-  "supportUrl": "https://github.com/samihalawa/catastro-pro/blob/main/SUPPORT.md",
-  "privacyPolicyUrl": "https://github.com/samihalawa/catastro-pro/blob/main/PRIVACY.md",
-  "termsOfServiceUrl": "https://github.com/samihalawa/catastro-pro/blob/main/TERMS.md"
+  "supportUrl": "https://aiplugins.megawebs.com/plugins/catastro-pro/support",
+  "privacyPolicyUrl": "https://aiplugins.megawebs.com/plugins/catastro-pro/privacy",
+  "termsOfServiceUrl": "https://aiplugins.megawebs.com/plugins/catastro-pro/terms"
 }

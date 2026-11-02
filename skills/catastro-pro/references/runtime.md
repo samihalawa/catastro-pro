@@ -1,4 +1,4 @@
-# Acceso al conector — Catastro Pro 0.6.0
+# Acceso al conector — Catastro Pro 0.6.2
 
 Endpoint MCP Streamable HTTP: `https://aiplugins.megawebs.com/mcp/catastro-pro`. Herramienta: `inspect_spanish_cadastral_property`. Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.
 

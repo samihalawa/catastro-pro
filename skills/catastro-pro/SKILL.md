@@ -9,7 +9,7 @@ Una referencia. Una ficha clara. Prepara una ficha de datos catastrales público
 
 ## Uso
 
-Esta edición 0.6.0 incluye el conector MCP alojado `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. Úsalo para su consulta pública de solo lectura: Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.2 incluye el conector MCP alojado `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. Úsalo para su consulta pública de solo lectura: Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 
