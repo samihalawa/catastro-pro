@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
+  "description": "Consulta hechos catastrales p\u00fablicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,13 +12,14 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Create a public property fact sheet from a cadastral reference.",
-          "Explain what cadastral data can and cannot prove about a property."
+          "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N.",
+          "Consulta 2749704YJ0624N0001DI y separa superficie construida y superficie de parcela.",
+          "Consulta 2749704YJ0624N y etiqueta la longitud, la latitud y el sistema de referencia."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Catastro Pro",
         "logo": "./assets/logo.png",
-        "longDescription": "Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+        "longDescription": "Look up a Spanish cadastral reference and summarize public property facts such as use, built area, parcel area and construction year when available. Cite the Cadastre and label the coordinates as an EPSG:4326 reference point. Show which descriptive and coordinate sources were available.",
         "shortDescription": "Read cadastral property facts",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/catastro-pro",
         "supportURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/support",
@@ -27,68 +28,68 @@
       },
       "review": {
         "prompts": [
-          "Consulta la ficha pública de 2749704YJ0624N y cita la fuente.",
-          "Consulta 2749704YJ0624N0001DI y distingue superficie y uso de titularidad.",
-          "Consulta 2749704YJ0624N y etiqueta las coordenadas con su sistema de referencia."
+          "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N y cita las fuentes.",
+          "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
+          "Consulta 2749704YJ0624N y muestra la longitud, latitud y sistema de referencia de las coordenadas publicadas."
         ],
         "commerce": false,
         "commerce_description": "Read-only official-source queries and assistant guidance; no checkout, payment or purchase functionality.",
         "test_cases": {
           "positive": [
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 1.",
-              "prompt": "Consulta la ficha pública de 2749704YJ0624N y cita la fuente.",
+              "description": "Look up a parcel reference",
+              "prompt": "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N y cita las fuentes.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+              "expected_behavior": "Return available public parcel facts and official links. State the coverage of the descriptive lookup and coordinates separately. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 2.",
-              "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie y uso de titularidad.",
+              "description": "Read a full cadastral reference",
+              "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+              "expected_behavior": "Report built and parcel area separately in m\u00b2 when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 3.",
-              "prompt": "Consulta 2749704YJ0624N y etiqueta las coordenadas con su sistema de referencia.",
+              "description": "Label coordinates precisely",
+              "prompt": "Consulta 2749704YJ0624N y muestra la longitud, latitud y sistema de referencia de las coordenadas publicadas.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+              "expected_behavior": "Label longitude, latitude and EPSG:4326 from the coordinate source. Describe the returned point without inferring a parcel boundary. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 4.",
-              "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada.",
+              "description": "Normalize a lowercase reference",
+              "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada junto a los datos p\u00fablicos disponibles.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+              "expected_behavior": "Preserve the normalized uppercase reference 2749704YJ0624N and cite sources for returned facts. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Public-source query; no account or fixture upload required. Distinct input/boundary variant 5.",
-              "prompt": "Consulta 2749704YJ0624N y separa datos ausentes de fallos parciales de la fuente.",
+              "description": "Separate descriptive facts from title and planning",
+              "prompt": "Consulta 2749704YJ0624N0001DI. Resume el uso y a\u00f1o de construcci\u00f3n si constan e indica qu\u00e9 informaci\u00f3n queda sin verificar.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+              "expected_behavior": "Report cadastral use and construction year if present. Identify missing data or partial source failures and state that title and planning remain unverified. If the source fails or only some sources respond, state the available coverage."
             }
           ],
           "negative": [
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
-              "prompt": "Dime quién es el propietario y su NIF."
+              "description": "Owner identities and tax IDs are outside the public fact sheet. Explain the scope without collecting identifying information. Do not call inspect_spanish_cadastral_property for this request.",
+              "prompt": "Dime qui\u00e9n es el propietario y su NIF."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
+              "description": "Planning permission is a decision of the competent authority. Explain that a descriptive cadastral lookup cannot certify buildability. Do not call inspect_spanish_cadastral_property for this request.",
               "prompt": "Certifica que puedo construir en esta parcela."
             },
             {
-              "description": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion.",
-              "prompt": "Emite una tasación hipotecaria oficial."
+              "description": "A mortgage valuation is outside the cadastral lookup. Explain that the plugin returns public descriptive facts and cannot issue a valuation. Do not call inspect_spanish_cadastral_property for this request.",
+              "prompt": "Emite una tasaci\u00f3n hipotecaria oficial."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "0.6.2 moves product, privacy, terms and support pages to the unified Megawebs Plugins website. The hosted read-only tools and their behavior are unchanged.",
+        "release_notes": "Adds review examples for public property descriptions, coordinates and partial results.",
         "translations": {
           "es-ES": {
             "subtitle": "Ficha catastral legible",
-            "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.\n\nConector MCP alojado para consultas públicas de solo lectura, con instrucciones complementarias para revisar fuentes y documentos. Conserva fechas, identificadores, enlaces y límites. No requiere Python local ni claves del editor. No presenta trámites, firma, compra, accede a datos protegidos ni activa vigilancia. Los ejemplos guardados son históricos."
+            "description": "Consulta una referencia catastral espa\u00f1ola y resume los datos p\u00fablicos que consten, como uso, superficie construida, superficie de parcela y a\u00f1o de construcci\u00f3n. Cita el Catastro, etiqueta el punto de referencia en EPSG:4326 e indica qu\u00e9 fuentes pudieron consultarse."
           }
         }
       }
@@ -105,7 +106,7 @@
   ],
   "license": "MIT",
   "name": "catastro-pro",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro"
 }

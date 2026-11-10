@@ -4,9 +4,14 @@
 
 Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.
 
-**Versión 0.6.2 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.3 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
+
+```bash
+/plugin install catastro-pro --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
+```
+
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/catastro-pro` mediante Streamable HTTP y expone `inspect_spanish_cadastral_property`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 

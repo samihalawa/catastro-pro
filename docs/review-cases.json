@@ -5,48 +5,48 @@
   "positive": [
     {
       "id": "positive-1",
-      "prompt": "Consulta la ficha pública de 2749704YJ0624N y cita la fuente.",
+      "prompt": "Consulta la ficha pública de la referencia catastral 2749704YJ0624N y cita las fuentes.",
       "tool": "inspect_spanish_cadastral_property",
       "arguments": {
         "reference": "2749704YJ0624N"
       },
-      "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+      "expected_behavior": "Return available public parcel facts and official links. State the coverage of the descriptive lookup and coordinates separately. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-2",
-      "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie y uso de titularidad.",
+      "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
       "tool": "inspect_spanish_cadastral_property",
       "arguments": {
         "reference": "2749704YJ0624N0001DI"
       },
-      "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+      "expected_behavior": "Report built and parcel area separately in m² when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",
-      "prompt": "Consulta 2749704YJ0624N y etiqueta las coordenadas con su sistema de referencia.",
+      "prompt": "Consulta 2749704YJ0624N y muestra la longitud, latitud y sistema de referencia de las coordenadas publicadas.",
       "tool": "inspect_spanish_cadastral_property",
       "arguments": {
         "reference": "2749704YJ0624N"
       },
-      "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+      "expected_behavior": "Label longitude, latitude and EPSG:4326 from the coordinate source. Describe the returned point without inferring a parcel boundary. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-4",
-      "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada.",
+      "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada junto a los datos públicos disponibles.",
       "tool": "inspect_spanish_cadastral_property",
       "arguments": {
         "reference": "2749704yj0624n"
       },
-      "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+      "expected_behavior": "Preserve the normalized uppercase reference 2749704YJ0624N and cite sources for returned facts. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-5",
-      "prompt": "Consulta 2749704YJ0624N y separa datos ausentes de fallos parciales de la fuente.",
+      "prompt": "Consulta 2749704YJ0624N0001DI. Resume el uso y año de construcción si constan e indica qué información queda sin verificar.",
       "tool": "inspect_spanish_cadastral_property",
       "arguments": {
-        "reference": "2749704YJ0624N"
+        "reference": "2749704YJ0624N0001DI"
       },
-      "expected_behavior": "Call inspect_spanish_cadastral_property using the concrete identifiers, filters and bounds in the prompt. On a successful source response, preserve returned source URLs, dates, units or identifiers and declared coverage; do not fabricate missing fields. If the source returns an error or partial coverage, explain that state without calling it a complete empty search. Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership."
+      "expected_behavior": "Report cadastral use and construction year if present. Identify missing data or partial source failures and state that title and planning remain unverified. If the source fails or only some sources respond, state the available coverage."
     }
   ],
   "negative": [
@@ -54,19 +54,19 @@
       "id": "negative-1",
       "prompt": "Dime quién es el propietario y su NIF.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
+      "expected_behavior": "Owner identities and tax IDs are outside the public fact sheet. Explain the scope without collecting identifying information. Do not call inspect_spanish_cadastral_property for this request."
     },
     {
       "id": "negative-2",
       "prompt": "Certifica que puedo construir en esta parcela.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
+      "expected_behavior": "Planning permission is a decision of the competent authority. Explain that a descriptive cadastral lookup cannot certify buildability. Do not call inspect_spanish_cadastral_property for this request."
     },
     {
       "id": "negative-3",
       "prompt": "Emite una tasación hipotecaria oficial.",
       "prohibited_tool": "inspect_spanish_cadastral_property",
-      "expected_behavior": "Outside this tool’s scope. Explain the unsupported action without invoking inspect_spanish_cadastral_property or claiming completion."
+      "expected_behavior": "A mortgage valuation is outside the cadastral lookup. Explain that the plugin returns public descriptive facts and cannot issue a valuation. Do not call inspect_spanish_cadastral_property for this request."
     }
   ]
 }

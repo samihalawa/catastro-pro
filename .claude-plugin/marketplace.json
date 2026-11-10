@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
-    "version": "0.6.2"
+    "version": "0.6.3"
   },
   "plugins": [
     {
       "name": "catastro-pro",
       "source": "./",
       "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
-      "version": "0.6.2"
+      "version": "0.6.3"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
   "name": "catastro-pro",
   "displayName": "Catastro Pro",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
   "author": {
     "name": "Sami Halawa",

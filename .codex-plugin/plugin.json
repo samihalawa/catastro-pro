@@ -9,13 +9,14 @@
     "category": "Productivity",
     "composerIcon": "./assets/icon.png",
     "defaultPrompt": [
-      "Create a public property fact sheet from a cadastral reference.",
-      "Explain what cadastral data can and cannot prove about a property."
+      "Consulta la ficha pública de la referencia catastral 2749704YJ0624N.",
+      "Consulta 2749704YJ0624N0001DI y separa superficie construida y superficie de parcela.",
+      "Consulta 2749704YJ0624N y etiqueta la longitud, la latitud y el sistema de referencia."
     ],
     "developerName": "Sami Halawa",
     "displayName": "Catastro Pro",
     "logo": "./assets/logo.png",
-    "longDescription": "Retrieve public cadastral facts for one reference and labelled EPSG:4326 coordinates; identify partial failures without certifying ownership.\n\nConnects to a hosted, read-only MCP tool for official Spanish public-source queries. Complementary instructions guide source checks, document reading and interpretation using the host’s authorized capabilities. Results retain available provenance, dates, warnings and partial coverage. No local Python installation or publisher API key is required.\n\nThe tool does not submit applications, sign documents, make purchases, access protected records or start background monitoring. A historical example remains labelled as such. Source availability and complete coverage must be verified for each query; no official endorsement or legal, financial, title or eligibility guarantee is implied.",
+    "longDescription": "Look up a Spanish cadastral reference and summarize public property facts such as use, built area, parcel area and construction year when available. Cite the Cadastre and label the coordinates as an EPSG:4326 reference point. Show which descriptive and coordinate sources were available.",
     "shortDescription": "Read cadastral property facts",
     "websiteURL": "https://aiplugins.megawebs.com/plugins/catastro-pro",
     "supportURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/support",
@@ -34,7 +35,7 @@
   "license": "MIT",
   "name": "catastro-pro",
   "skills": "./skills",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "extensions": {
     "com.openai": {
