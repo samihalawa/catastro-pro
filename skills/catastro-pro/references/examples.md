@@ -4,7 +4,7 @@ Pide: «Consulta la referencia 2749704YJ0624N0001DI y distingue superficie const
 
 ## Captura histórica
 
-`demo.json` es un documento guardado con fecha 2026-10-20T16:59:24.537780+00:00. Conserva los datos, enlaces, estructura y campos originales para trazabilidad. Léelo como archivo; no hay una acción especial que lo ejecute. El ejemplo no acredita condiciones actuales, cobertura completa ni una revisión realizada hoy. `examples/demo.md`, `docs/demo.html` y la vista documental del sitio son representaciones históricas del mismo tipo de resultado.
+`demo.json` es un documento guardado con fecha 2026-10-20T16:59:24.537780+00:00. Conserva los datos, enlaces, estructura y campos originales para trazabilidad. Léelo como archivo; no hay una acción especial que lo ejecute. El ejemplo no acredita condiciones actuales, cobertura completa ni una revisión realizada hoy. `examples/demo.md` y la vista documental del sitio son representaciones históricas del mismo tipo de resultado.
 
 ## Comprobaciones de comportamiento
 
