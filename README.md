@@ -1,5 +1,3 @@
-![Icono de Catastro Pro](assets/icon.png)
-
 # Catastro Pro
 
 Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.
