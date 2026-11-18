@@ -1,4 +1,4 @@
-# Revisión — Catastro Pro 0.6.2
+# Revisión — Spain Property & Catastro 0.6.4
 
 Paquete remoto con una herramienta: `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. Casos: cinco positivos y tres negativos en `plugin.json`. Las variantes cubren entradas o límites distintos; las fuentes dinámicas pueden devolver errores o cobertura parcial, que deben declararse sin fabricar resultados.
 

@@ -1,7 +1,7 @@
 {
   "name": "catastro-pro",
   "interface": {
-    "displayName": "Catastro Pro"
+    "displayName": "Spain Property & Catastro"
   },
   "plugins": [
     {

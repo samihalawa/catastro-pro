@@ -1,4 +1,4 @@
-# Fuentes oficiales — Catastro Pro
+# Fuentes oficiales — Spain Property & Catastro
 
 - [Official cadastral web-service schemas](https://www.catastro.hacienda.gob.es/ws/esquemas.htm)
 - [Access to cadastral information](https://www.catastro.hacienda.gob.es/es-ES/acceso_infocat.html)

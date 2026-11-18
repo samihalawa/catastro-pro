@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Consulta hechos catastrales p\u00fablicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
+  "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,15 +12,15 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N.",
-          "Consulta 2749704YJ0624N0001DI y separa superficie construida y superficie de parcela.",
-          "Consulta 2749704YJ0624N y etiqueta la longitud, la latitud y el sistema de referencia."
+          "Consulta el inmueble 2749704YJ0624N0001DI: uso, superficie y año de construcción.",
+          "Look up cadastral reference 2749704YJ0624N0001DI and show the official property facts.",
+          "Dame las coordenadas de 2749704YJ0624N0001DI con longitud, latitud y fuente."
         ],
         "developerName": "Sami Halawa",
-        "displayName": "Catastro Pro",
+        "displayName": "Spain Property & Catastro",
         "logo": "./assets/logo.png",
-        "longDescription": "Look up a Spanish cadastral reference and summarize public property facts such as use, built area, parcel area and construction year when available. Cite the Cadastre and label the coordinates as an EPSG:4326 reference point. Show which descriptive and coordinate sources were available.",
-        "shortDescription": "Read cadastral property facts",
+        "longDescription": "Look up public facts about a property in Spain using its cadastral reference. Get the recorded use, built area, parcel area and construction year when available, plus a reference point labelled as EPSG:4326 longitude and latitude. Link the official Cadastre sources and show which descriptive and coordinate services responded. Useful for checking property descriptions and preparing a cadastral fact sheet. The public lookup does not identify owners, certify title or boundaries, provide a market valuation or confirm planning permission. Navarra and the Basque Country use separate cadastral systems.",
+        "shortDescription": "Property facts and coordinates",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/catastro-pro",
         "supportURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/privacy",
@@ -28,7 +28,7 @@
       },
       "review": {
         "prompts": [
-          "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N y cita las fuentes.",
+          "Consulta la ficha pública de la referencia catastral 2749704YJ0624N y cita las fuentes.",
           "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
           "Consulta 2749704YJ0624N y muestra la longitud, latitud y sistema de referencia de las coordenadas publicadas."
         ],
@@ -38,7 +38,7 @@
           "positive": [
             {
               "description": "Look up a parcel reference",
-              "prompt": "Consulta la ficha p\u00fablica de la referencia catastral 2749704YJ0624N y cita las fuentes.",
+              "prompt": "Consulta la ficha pública de la referencia catastral 2749704YJ0624N y cita las fuentes.",
               "tools_triggered": "inspect_spanish_cadastral_property",
               "expected_behavior": "Return available public parcel facts and official links. State the coverage of the descriptive lookup and coordinates separately. If the source fails or only some sources respond, state the available coverage."
             },
@@ -46,7 +46,7 @@
               "description": "Read a full cadastral reference",
               "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
               "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Report built and parcel area separately in m\u00b2 when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
+              "expected_behavior": "Report built and parcel area separately in m² when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Label coordinates precisely",
@@ -56,13 +56,13 @@
             },
             {
               "description": "Normalize a lowercase reference",
-              "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada junto a los datos p\u00fablicos disponibles.",
+              "prompt": "Consulta 2749704yj0624n y muestra la referencia normalizada junto a los datos públicos disponibles.",
               "tools_triggered": "inspect_spanish_cadastral_property",
               "expected_behavior": "Preserve the normalized uppercase reference 2749704YJ0624N and cite sources for returned facts. If the source fails or only some sources respond, state the available coverage."
             },
             {
               "description": "Separate descriptive facts from title and planning",
-              "prompt": "Consulta 2749704YJ0624N0001DI. Resume el uso y a\u00f1o de construcci\u00f3n si constan e indica qu\u00e9 informaci\u00f3n queda sin verificar.",
+              "prompt": "Consulta 2749704YJ0624N0001DI. Resume el uso y año de construcción si constan e indica qué información queda sin verificar.",
               "tools_triggered": "inspect_spanish_cadastral_property",
               "expected_behavior": "Report cadastral use and construction year if present. Identify missing data or partial source failures and state that title and planning remain unverified. If the source fails or only some sources respond, state the available coverage."
             }
@@ -70,7 +70,7 @@
           "negative": [
             {
               "description": "Owner identities and tax IDs are outside the public fact sheet. Explain the scope without collecting identifying information. Do not call inspect_spanish_cadastral_property for this request.",
-              "prompt": "Dime qui\u00e9n es el propietario y su NIF."
+              "prompt": "Dime quién es el propietario y su NIF."
             },
             {
               "description": "Planning permission is a decision of the competent authority. Explain that a descriptive cadastral lookup cannot certify buildability. Do not call inspect_spanish_cadastral_property for this request.",
@@ -78,18 +78,18 @@
             },
             {
               "description": "A mortgage valuation is outside the cadastral lookup. Explain that the plugin returns public descriptive facts and cannot issue a valuation. Do not call inspect_spanish_cadastral_property for this request.",
-              "prompt": "Emite una tasaci\u00f3n hipotecaria oficial."
+              "prompt": "Emite una tasación hipotecaria oficial."
             }
           ]
         },
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Adds review examples for public property descriptions, coordinates and partial results.",
+        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
         "translations": {
           "es-ES": {
-            "subtitle": "Ficha catastral legible",
-            "description": "Consulta una referencia catastral espa\u00f1ola y resume los datos p\u00fablicos que consten, como uso, superficie construida, superficie de parcela y a\u00f1o de construcci\u00f3n. Cita el Catastro, etiqueta el punto de referencia en EPSG:4326 e indica qu\u00e9 fuentes pudieron consultarse."
+            "subtitle": "Inmuebles y datos catastrales",
+            "description": "Consulta datos públicos de un inmueble en España mediante su referencia catastral. Obtén uso, superficie construida, superficie de parcela y año de construcción cuando consten, además de un punto de referencia con longitud y latitud EPSG:4326. Incluye fuentes oficiales y disponibilidad de cada consulta. Sirve para contrastar descripciones y preparar una ficha catastral. No identifica propietarios, certifica titularidad o lindes, tasa el inmueble ni confirma licencias urbanísticas. Navarra y País Vasco tienen sistemas catastrales separados."
           }
         }
       }
@@ -97,16 +97,18 @@
   },
   "keywords": [
     "spain",
-    "claude-plugin",
-    "catastro",
-    "referencia-catastral",
+    "property",
+    "real estate",
+    "cadastral reference",
     "inmuebles",
-    "arquitectura",
-    "cartografia"
+    "vivienda",
+    "superficie",
+    "coordenadas",
+    "catastro"
   ],
   "license": "MIT",
   "name": "catastro-pro",
-  "version": "0.6.3",
+  "version": "0.6.4",
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro"
 }

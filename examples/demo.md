@@ -1,6 +1,6 @@
 > Documento histórico de una edición anterior. Conserva sus datos, fecha y procedencia; no es una consulta actual ni una función de ejecución de esta habilidad.
 
-# Catastro Pro
+# Spain Property & Catastro — ejemplo histórico
 
 Una referencia. Una ficha clara.
 

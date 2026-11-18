@@ -1,4 +1,4 @@
-# Procedimiento — Catastro Pro
+# Procedimiento — Spain Property & Catastro
 
 1. Reutiliza la referencia catastral ya proporcionada o presente en documentos autorizados. Si solo hay una dirección, resuelve la correspondencia en la cartografía oficial antes de asignar datos a un inmueble. No pidas identidad del propietario, NIF, certificados, contraseñas ni acceso a datos protegidos. Una referencia parcial puede cubrir una parcela con varias unidades: no selecciones una vivienda por defecto.
 2. Abre la información pública oficial mediante la navegación nativa autorizada o examina la ficha aportada. Registra referencia completa, dirección tal como consta, uso, superficie construida, superficie de parcela, año de construcción y distinción entre inmueble y parcela. Conserva unidades y rótulos originales; superficie construida no equivale a superficie útil. Los campos ausentes quedan «no consta», no cero.

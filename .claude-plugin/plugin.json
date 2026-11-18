@@ -1,8 +1,8 @@
 {
   "name": "catastro-pro",
-  "displayName": "Catastro Pro",
-  "version": "0.6.3",
-  "description": "Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad.",
+  "displayName": "Spain Property & Catastro",
+  "version": "0.6.4",
+  "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,11 +10,14 @@
   "license": "MIT",
   "keywords": [
     "spain",
-    "catastro",
-    "referencia-catastral",
+    "property",
+    "real estate",
+    "cadastral reference",
     "inmuebles",
-    "arquitectura",
-    "cartografia"
+    "vivienda",
+    "superficie",
+    "coordenadas",
+    "catastro"
   ],
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro",

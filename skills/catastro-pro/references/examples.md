@@ -1,4 +1,4 @@
-# Ejemplos y escenarios de revisión — Catastro Pro
+# Ejemplos históricos y escenarios — Spain Property & Catastro
 
 Pide: «Consulta la referencia 2749704YJ0624N0001DI y distingue superficie construida de parcela». La referencia de ejemplo no identifica una propiedad del usuario. demo.json conserva una captura anterior; si no se accede a la fuente actual, presenta su ficha como ejemplo histórico, nunca como comprobación actual.
 
