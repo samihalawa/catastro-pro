@@ -1,22 +1,21 @@
 # Spain Property & Catastro
 
-Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.
+Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.
 
-**Versión 0.6.4 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
+**Versión 0.6.5 · Conector MCP alojado e instrucciones complementarias · Sami Halawa · MIT**
 
 ## Instalación y uso
 
-```bash
-/plugin install catastro-pro --marketplace samihalawa/2026-MASTER-Marketplace-Plugins-Connectors-etc
-```
+Instalación y conexión: [abrir la página del producto](https://aiplugins.megawebs.com/plugins/catastro-pro). Elige allí las instrucciones del anfitrión que utilices.
 
 
 Instala el paquete en un anfitrión compatible con plugins y MCP remoto. La configuración incluida conecta `https://aiplugins.megawebs.com/mcp/catastro-pro` mediante Streamable HTTP y expone `inspect_spanish_cadastral_property`. No necesitas Python local, instalar dependencias ni proporcionar una clave del editor. La disponibilidad de la conexión depende del anfitrión y de la fuente pública.
 
-> Consulta la ficha pública de 2749704YJ0624N y cita la fuente.
+> Prepara una ficha catastral de 2749704YJ0624N0001DI con uso, superficie y año de construcción.
 
-- Consulta 2749704YJ0624N0001DI y distingue superficie y uso de titularidad.
-- Consulta 2749704YJ0624N y etiqueta las coordenadas con su sistema de referencia.
+- Look up Spanish property 2749704YJ0624N0001DI and cite the official cadastral facts.
+- Consulta las coordenadas de 2749704YJ0624N y distingue longitud, latitud y referencia de parcela.
+
 
 Lee [la habilidad](skills/catastro-pro/SKILL.md) para el procedimiento, [las fuentes](skills/catastro-pro/references/sources.md) y [el contrato de acceso](skills/catastro-pro/references/runtime.md). La herramienta realiza la consulta acotada descrita; la lectura de documentos, interpretación y creación de archivos usan capacidades adicionales del anfitrión. Conserva los identificadores, enlaces, fechas y límites realmente devueltos.
 

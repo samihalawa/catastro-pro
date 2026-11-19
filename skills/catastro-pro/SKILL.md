@@ -1,15 +1,20 @@
 ---
 name: catastro-pro
-description: "Use when the user wants to look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available."
+description: "Use when the user wants to look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available."
 ---
 
 # Spain Property & Catastro
 
-Una referencia. Una ficha clara. Prepara una ficha de datos catastrales públicos con superficies, uso, construcción y coordenadas según la documentación disponible.
+De la referencia catastral a una ficha clara del inmueble. Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.
+## Primera consulta y resultado útil
+
+Con una referencia catastral válida, consulta la herramienta sin pedir dirección, cuenta o identidad del propietario. Si el usuario solo aporta una dirección, verifica la correspondencia en la cartografía oficial con las capacidades disponibles o pide la referencia; la herramienta no busca direcciones. Usa la herramienta MCP para su consulta soportada; si su respuesta ya resuelve la petición, no repitas esa búsqueda en el navegador. Abre documentos adicionales solo cuando la pregunta o una laguna material lo requieran. Reutiliza el contexto; pregunta solo por un dato esencial que no puedas resolver con la información o fuentes disponibles.
+
+Entrega primero la respuesta o comparación que pidió el usuario, con una tabla breve cuando ayude. Conserva enlaces oficiales, fechas, identificadores y unidades relevantes; explica los límites que cambien la interpretación junto al dato afectado. El resultado debe poder reutilizarse desde la conversación, sin publicidad, llamadas a contratar ni recomendaciones ajenas a la tarea. Propón una continuación solo cuando ayude a resolver la petición; no actives alertas, seguimiento ni funciones que no se hayan ejecutado.
 
 ## Uso
 
-Esta edición 0.6.4 incluye el conector MCP alojado `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. Úsalo para su consulta pública de solo lectura: Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
+Esta edición 0.6.5 incluye el conector MCP alojado `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. Úsalo para su consulta pública de solo lectura: Consulta hechos catastrales públicos de una referencia y coordenadas EPSG:4326; identifica fallos parciales sin certificar titularidad. Aplica después estas instrucciones para interpretar los resultados y revisar documentos con las capacidades autorizadas del anfitrión. No requiere procesos locales, Python ni claves del editor. No envíes conversaciones completas, documentos privados ni credenciales como argumentos.
 
 Responde en el idioma del usuario. Reutiliza los datos ya facilitados. Consulta `references/workflow.md` para el procedimiento específico, `references/sources.md` para las fuentes oficiales y `references/runtime.md` para acceso y privacidad. Si faltan datos que cambien la conclusión, concreta la incertidumbre; no inventes identificadores, documentos ni consultas.
 

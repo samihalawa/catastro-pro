@@ -5,15 +5,15 @@
     "email": "sami@samihalawa.com"
   },
   "metadata": {
-    "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
-    "version": "0.6.4"
+    "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
+    "version": "0.6.5"
   },
   "plugins": [
     {
       "name": "catastro-pro",
       "source": "./",
-      "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
-      "version": "0.6.4"
+      "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
+      "version": "0.6.5"
     }
   ]
 }

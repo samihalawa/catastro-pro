@@ -1,8 +1,8 @@
 {
   "name": "catastro-pro",
   "displayName": "Spain Property & Catastro",
-  "version": "0.6.4",
-  "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
+  "version": "0.6.5",
+  "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
   "author": {
     "name": "Sami Halawa",
     "email": "sami@samihalawa.com"
@@ -10,6 +10,8 @@
   "license": "MIT",
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "property",
     "real estate",
     "cadastral reference",

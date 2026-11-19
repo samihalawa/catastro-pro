@@ -4,7 +4,7 @@
     "email": "sami@samihalawa.com",
     "name": "Sami Halawa"
   },
-  "description": "Look up Spanish property and cadastral data (inmuebles y Catastro) by cadastral reference: use, built area, parcel area, construction year and coordinates when publicly available.",
+  "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -12,15 +12,15 @@
         "category": "Productivity",
         "composerIcon": "./assets/icon.png",
         "defaultPrompt": [
-          "Consulta el inmueble 2749704YJ0624N0001DI: uso, superficie y año de construcción.",
-          "Look up cadastral reference 2749704YJ0624N0001DI and show the official property facts.",
-          "Dame las coordenadas de 2749704YJ0624N0001DI con longitud, latitud y fuente."
+          "Prepara una ficha catastral de 2749704YJ0624N0001DI con uso, superficie y año de construcción.",
+          "Look up Spanish property 2749704YJ0624N0001DI and cite the official cadastral facts.",
+          "Consulta las coordenadas de 2749704YJ0624N y distingue longitud, latitud y referencia de parcela."
         ],
         "developerName": "Sami Halawa",
         "displayName": "Spain Property & Catastro",
         "logo": "./assets/logo.png",
-        "longDescription": "Look up public facts about a property in Spain using its cadastral reference. Get the recorded use, built area, parcel area and construction year when available, plus a reference point labelled as EPSG:4326 longitude and latitude. Link the official Cadastre sources and show which descriptive and coordinate services responded. Useful for checking property descriptions and preparing a cadastral fact sheet. The public lookup does not identify owners, certify title or boundaries, provide a market valuation or confirm planning permission. Navarra and the Basque Country use separate cadastral systems.",
-        "shortDescription": "Property facts and coordinates",
+        "longDescription": "Turn a cadastral reference into a clear property fact sheet for Spain (España). Look up public recorded use, built area, parcel area and construction year when available, plus a reference point labelled as EPSG:4326 longitude and latitude. Keep official source links and distinguish descriptive facts from coordinate-service results. The lookup does not search by street address, identify owners, certify title or boundaries, value property or confirm planning permission. Navarra and the Basque Country use separate cadastral systems.",
+        "shortDescription": "Property and Catastro in Spain",
         "websiteURL": "https://aiplugins.megawebs.com/plugins/catastro-pro",
         "supportURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/support",
         "privacyPolicyURL": "https://aiplugins.megawebs.com/plugins/catastro-pro/privacy",
@@ -65,6 +65,12 @@
               "prompt": "Consulta 2749704YJ0624N0001DI. Resume el uso y año de construcción si constan e indica qué información queda sin verificar.",
               "tools_triggered": "inspect_spanish_cadastral_property",
               "expected_behavior": "Report cadastral use and construction year if present. Identify missing data or partial source failures and state that title and planning remain unverified. If the source fails or only some sources respond, state the available coverage."
+            },
+            {
+              "description": "Recognize the user task without naming the plugin",
+              "prompt": "Estoy comprobando los datos de un inmueble en España, referencia 2749704YJ0624N0001DI. ¿Qué uso, superficie y año constan?",
+              "tools_triggered": "inspect_spanish_cadastral_property",
+              "expected_behavior": "Use the domain tool for the supplied public inputs without asking for unrelated account or profile information. Answer the requested comparison with returned official links, dates, units and actual coverage. Distinguish partial or failed source access from no matches; do not claim an unsupported feature or current status."
             }
           ],
           "negative": [
@@ -85,10 +91,10 @@
         "demo_recording_url": "https://github.com/samihalawa/spain-assistant-mcp-apps/releases/download/v0.6.1/spain-hosted-demo.mp4"
       },
       "publication": {
-        "release_notes": "Clearer task-based name, descriptions and examples for finding the right Spanish public records. Existing tools and source coverage are unchanged.",
+        "release_notes": "Improved Spanish and English discovery, first-use prompts and sourced result guidance across Spain utilities. No new data access, payment features or background monitoring.",
         "translations": {
           "es-ES": {
-            "subtitle": "Inmuebles y datos catastrales",
+            "subtitle": "Inmuebles y Catastro de España",
             "description": "Consulta datos públicos de un inmueble en España mediante su referencia catastral. Obtén uso, superficie construida, superficie de parcela y año de construcción cuando consten, además de un punto de referencia con longitud y latitud EPSG:4326. Incluye fuentes oficiales y disponibilidad de cada consulta. Sirve para contrastar descripciones y preparar una ficha catastral. No identifica propietarios, certifica titularidad o lindes, tasa el inmueble ni confirma licencias urbanísticas. Navarra y País Vasco tienen sistemas catastrales separados."
           }
         }
@@ -97,6 +103,8 @@
   },
   "keywords": [
     "spain",
+    "España",
+    "Spanish",
     "property",
     "real estate",
     "cadastral reference",
@@ -108,7 +116,7 @@
   ],
   "license": "MIT",
   "name": "catastro-pro",
-  "version": "0.6.4",
+  "version": "0.6.5",
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro"
 }
