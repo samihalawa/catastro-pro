@@ -1,7 +1,7 @@
 {
   "name": "catastro-pro",
   "displayName": "Spain Property & Catastro",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
   "author": {
     "name": "Sami Halawa",

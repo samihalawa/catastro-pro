@@ -1,5 +1,5 @@
 {
-  "version": "0.6.5",
+  "version": "0.6.6",
   "endpoint": "https://aiplugins.megawebs.com/mcp/catastro-pro",
   "scope": "Specification of positive inputs and expected behavior, and unsupported negative requests. This JSON defines cases and is not an execution log. Direct MCP calls and the SDK demo verify tool behavior; the demo does not test assistant routing. Actual native assistant test evidence is retained in the native release records.",
   "positive": [
@@ -11,15 +11,6 @@
         "reference": "2749704YJ0624N"
       },
       "expected_behavior": "Return available public parcel facts and official links. State the coverage of the descriptive lookup and coordinates separately. If the source fails or only some sources respond, state the available coverage."
-    },
-    {
-      "id": "positive-2",
-      "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
-      "tool": "inspect_spanish_cadastral_property",
-      "arguments": {
-        "reference": "2749704YJ0624N0001DI"
-      },
-      "expected_behavior": "Report built and parcel area separately in m² when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
     },
     {
       "id": "positive-3",

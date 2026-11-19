@@ -1,4 +1,4 @@
-# Desarrollo — Spain Property & Catastro 0.6.5
+# Desarrollo — Spain Property & Catastro 0.6.6
 
 El paquete configura un MCP remoto Streamable HTTP; no contiene un servidor Python local. Contrato: `inspect_spanish_cadastral_property` en `https://aiplugins.megawebs.com/mcp/catastro-pro`. El servidor compartido se mantiene en `connectors/spain-assistant-mcp-apps` del repositorio privado maestro.
 

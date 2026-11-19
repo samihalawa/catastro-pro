@@ -6,14 +6,14 @@
   },
   "metadata": {
     "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
-    "version": "0.6.5"
+    "version": "0.6.6"
   },
   "plugins": [
     {
       "name": "catastro-pro",
       "source": "./",
       "description": "Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.",
-      "version": "0.6.5"
+      "version": "0.6.6"
     }
   ]
 }

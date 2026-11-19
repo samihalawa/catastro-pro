@@ -2,7 +2,7 @@
 
 Look up public property facts in Spain (inmuebles y Catastro de España) by cadastral reference: recorded use, area, construction year and reference coordinates when available.
 
-Versión 0.6.5: `inspect_spanish_cadastral_property` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
+Versión 0.6.6: `inspect_spanish_cadastral_property` mediante MCP remoto alojado, complementado por instrucciones para revisar fuentes y documentos. No requiere Python local ni claves del editor. La cobertura y la vigencia se verifican por consulta; las capturas incluidas son históricas. Los textos de ficha y sus traducciones canónicos están en `plugin.json`. No implica afiliación oficial ni aprobación en un directorio.
 
 ## Descubrimiento y primera tarea
 

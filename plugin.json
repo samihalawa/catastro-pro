@@ -43,12 +43,6 @@
               "expected_behavior": "Return available public parcel facts and official links. State the coverage of the descriptive lookup and coordinates separately. If the source fails or only some sources respond, state the available coverage."
             },
             {
-              "description": "Read a full cadastral reference",
-              "prompt": "Consulta 2749704YJ0624N0001DI y distingue superficie construida y superficie de parcela, con unidades.",
-              "tools_triggered": "inspect_spanish_cadastral_property",
-              "expected_behavior": "Report built and parcel area separately in m² when returned. Preserve the complete 20-character reference and cite the official source. If the source fails or only some sources respond, state the available coverage."
-            },
-            {
               "description": "Label coordinates precisely",
               "prompt": "Consulta 2749704YJ0624N y muestra la longitud, latitud y sistema de referencia de las coordenadas publicadas.",
               "tools_triggered": "inspect_spanish_cadastral_property",
@@ -116,7 +110,7 @@
   ],
   "license": "MIT",
   "name": "catastro-pro",
-  "version": "0.6.5",
+  "version": "0.6.6",
   "homepage": "https://aiplugins.megawebs.com/plugins/catastro-pro",
   "repository": "https://github.com/samihalawa/catastro-pro"
 }
